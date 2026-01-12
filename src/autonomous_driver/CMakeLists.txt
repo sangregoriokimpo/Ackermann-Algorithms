@@ -56,12 +56,20 @@ ament_target_dependencies(fusion_gap_driver
 )
 target_link_libraries(fusion_gap_driver ${PCL_LIBRARIES})
 
+add_executable(fusion_gap_driverE0 src/fusion_gap_driverE0.cpp)
+ament_target_dependencies(fusion_gap_driverE0
+  rclcpp sensor_msgs geometry_msgs visualization_msgs nav_msgs pcl_conversions
+  tf2_ros tf2_sensor_msgs
+)
+target_link_libraries(fusion_gap_driverE0 ${PCL_LIBRARIES})
+
 # ---------------- Install ----------------
 install(TARGETS
   autonomous_driver
   rgbd_driver
   fusion_driver
   fusion_gap_driver
+  fusion_gap_driverE0
   2d_driver
   DESTINATION lib/${PROJECT_NAME}
 )

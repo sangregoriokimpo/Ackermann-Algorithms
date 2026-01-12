@@ -11,23 +11,23 @@
     </gazebo>
     <gazebo reference="fr_left_wheel_link">
         <material>Gazebo/Grey</material>
-        <mu1>1.0</mu1>
-        <mu2>1.0</mu2>
+        <mu1>2.0</mu1>
+        <mu2>2.0</mu2>
     </gazebo>
     <gazebo reference="fr_right_wheel_link">
         <material>Gazebo/Grey</material>
-        <mu1>1.0</mu1>
-        <mu2>1.0</mu2>
+        <mu1>2.0</mu1>
+        <mu2>2.0</mu2>
     </gazebo>
     <gazebo reference="re_left_wheel_link">
         <material>Gazebo/Grey</material>
-        <mu1>1.0</mu1>
-        <mu2>1.0</mu2>
+        <mu1>2.0</mu1>
+        <mu2>2.0</mu2>
     </gazebo>
     <gazebo reference="re_right_wheel_link">
         <material>Gazebo/Grey</material>
-        <mu1>1.0</mu1>
-        <mu2>1.0</mu2>
+        <mu1>2.0</mu1>
+        <mu2>2.0</mu2>
     </gazebo>
     <gazebo reference="virtual_steer_link">
         <material>Gazebo/Yellow</material>
@@ -98,7 +98,7 @@
             <max_steering_angle>1.570796</max_steering_angle>
 
             <!-- Max absolute linear speed in m/s -->
-            <max_speed>100</max_speed>
+            <max_speed>1000</max_speed>
 
             <!-- PID tuning -->
             <left_steering_pid_gain>1500 0 1</left_steering_pid_gain>
